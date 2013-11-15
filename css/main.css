@@ -1,0 +1,94 @@
+/* MARKETING CONTENT (from carousel.css)
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.marketing h2 {
+	font-weight: normal;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+	text-align: center;
+	xxx-margin-bottom: 20px;
+	margin-bottom: 0;
+}
+.marketing .col-lg-4 p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.marketing .col-lg-4 p.min-height {
+	height:	7em;
+}
+.marketing .col-lg-4 .img-thumbnail {
+	width: 220px;
+	height: 140px;
+}
+/* AUTHOR'S CUSTOM STYLES
+-------------------------------------------------- */
+body {
+	background-color: #fdf9f3; /* http://www.color-hex.com/color/faebd7 */
+	padding-top: 20px;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+b,
+dt,
+label,
+strong {
+	font-weight: 600;
+}
+#mainCarousel a {
+	outline: 0; /* remove dotted line at right when clicking on next slide button */
+}
+.carousel {
+	margin-bottom: 30px;
+}
+.carousel,
+.carousel .item,
+.carousel-inner > .item > img {
+	height: 300px;
+	min-width: 100%;
+}
+.carousel-caption {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
+}
+
+.featurette-divider {
+	margin: 20px 0;
+}
+.featurette-heading {
+	font-size: 40px;
+}
+hr.featurette-divider {
+	border-color: #e1d3c1 -moz-use-text-color -moz-use-text-color;
+}
+#loginModal .modal-header {
+	background-color: #008;
+	color: #fff;
+}
+#loginModal .close {
+	color: #fff;
+}
+@media (max-width: 1200px) {
+	.marketing .row p.min-height {
+		height:	auto;
+	}
+}
