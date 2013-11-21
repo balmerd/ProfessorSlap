@@ -1,8 +1,14 @@
+html,
+body {
+	height: 100%; /* The html and body elements cannot have any padding or margin. */
+	}
+
 /* MARKETING CONTENT (from carousel.css)
 -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
 .marketing {
+	margin-top: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -12,7 +18,6 @@
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
 	text-align: center;
-	xxx-margin-bottom: 20px;
 	margin-bottom: 0;
 }
 .marketing .col-lg-4 p {
@@ -28,9 +33,36 @@
 }
 /* AUTHOR'S CUSTOM STYLES
 -------------------------------------------------- */
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -40px;
+      }
+      /* Set the fixed height of the footer here */
+      #footer {
+        height: 40px;
+        color: #999;
+        background-color: #222;
+		background-image: linear-gradient(to bottom, #3C3C3C 0px, #222222 100%);
+		background-repeat: repeat-x;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      
 body {
 	background-color: #fdf9f3; /* http://www.color-hex.com/color/faebd7 */
-	padding-top: 20px;
 }
 html,
 body,
@@ -58,7 +90,9 @@ strong {
 	outline: 0; /* remove dotted line at right when clicking on next slide button */
 }
 .carousel {
-	margin-bottom: 30px;
+	xxx-margin-top: 30px;
+	xxx-margin-bottom: 30px;
+	margin-top: 50px;
 }
 .carousel,
 .carousel .item,
@@ -67,8 +101,9 @@ strong {
 	min-width: 100%;
 }
 .carousel-caption {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
 	border-radius: 12px;
+	bottom: 60px;
 }
 
 .featurette-divider {
@@ -87,8 +122,28 @@ hr.featurette-divider {
 #loginModal .close {
 	color: #fff;
 }
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: #428BCA;
+	background-image: none;
+}
+.container .credit {
+	margin-top: 5px;
+}
 @media (max-width: 1200px) {
 	.marketing .row p.min-height {
 		height:	auto;
 	}
 }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      .container .credit {
+        margin: 10px 0;
+      }
