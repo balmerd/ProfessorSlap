@@ -17,6 +17,7 @@
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/video-default.css">
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,600">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yesteryear">
@@ -62,10 +63,10 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="about.html">About</a></li>
+							<li><a href="about.html">About</a></li>
 							<li><a href="contact.html">Contact</a></li>
 							<li><a href="shop.html">Shop</a></li>
-							<li class="dropdown">
+							<li class="active" class="dropdown">
 								<a href="media.html" class="dropdown-toggle" data-toggle="dropdown">Media <b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="photo.html">Photos</a></li>
@@ -105,61 +106,17 @@
 		<!--/.navbar-->
 		<div class="container" style="padding-top:80px; padding-bottom:40px;">
 			<div class="row">
-				<div class="col-sm-3 hidden-xs">
-					<a href="#" class="thumbnail thumbnail-spacer">
-						<img src="img/ben/ben.jpg" />
-					</a>
+				<div class="col-sm-5">
+                    <div class="videoUiWrapper thumbnail">
+                        <video id="demo1" width="100%" height="100%">
+                            <source src="http://ia700305.us.archive.org/18/items/CopyingIsNotTheft/CINT_Nik_H264_720.ogv" type="video/ogg">
+                            <source src="http://ia700305.us.archive.org/18/items/CopyingIsNotTheft/CINT_Nik_H264_720_512kb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
 				</div>
-				<div class="col-sm-9">
-					<!-- replaces the above column when stacked on small screens -->
-					<div class="pull-left visible-xs" style="margin-right:1em; margin-bottom:0.5em;">
-						<a href="#" class="thumbnail thumbnail-spacer">
-							<img src="img/ben/ben.jpg" width="148" />
-						</a>
-					</div>
-					<p>
-						<span class="lead">ProfessorSlap</span> <span style="font-size:1.2em;">aka Ben Isaacs</span>
-						- Percussionist, Bassist, Guitarist, Composer, Arranger, Recording Engineer, and Producer.
-					</p>
-					<p>
-						I have been playing music my whole life, starting with violin at age 7.&nbsp;&nbsp;
-						I went through trumpet, guitar, piano, voice, clarinet and saxophone during my youth.&nbsp;&nbsp;
-						At 19 I was introduced to West African percussion.&nbsp;&nbsp;
-						This started a passionate connection with hand percussion that has grown and expanded 
-						for the last 25 years.
-					</p>
-					<p>
-						I have studied Djembe, Djunjun, Tama (talking drum), Sabar, Krin (slit log drum),
-						Bougarabou (West African conga) and Balaphone (West African marimba) as well as
-						more contemporary percussion.
-					</p>
-					<p>
-						I've traveled four times to West Africa to better understand the culture from which
-						the music comes and to study with master percussionists there, as well as here in
-						the USA.&nbsp;&nbsp;
-						My teachers are from all over West Africa and include Abdouli Diakite, Karamba Dioubate, 
-						Abdoul Doumbia, Mabiba Bagne, Sulemon Diop, Dibi Diop-Faye, Mohammed Camara, Moussa Traore, 
-						Diop Percussion, Bolocada Conde, Mamady Keita, Fara Tolna, and many more.
-					</p>
-					<p>
-						I have played with various touring international artists including: Djaily Kunda
-						Kouyate, Ibro Diabate, M'Balou Kante, Balla Tounkara, Karamba Diabate, Mohammed
-						Kouyate, Lokole West and Central African Dance Ensemble, Delou West African Dance
-						Ensemble, Panjea, Onye Onyamachi as well as leading my own original 14 piece urban
-						Hip-Hop, soul, funk, jazz, West African group The Slaptones in California.&nbsp;&nbsp;
-						I have also played (and still play) for touring and local African dance teachers Naby Bangoura,
-						M'Mah Toure, Allisane Kane, Assane and Oussaynou Kouyate, Nabi Camara, Mabiba Bagne,
-						Yousouf Koumbassa, Alseny Soumey, Manjou Kone, Saidou Ba Camara and many more.
-					</p>
-					<p>
-						I have taught and still teach private and group <a href="lessons.html">lessons</a> for both adults and children,
-						performing from large venues to living rooms to school assemblies to festivals.
-					</p>
-					<p>
-						For me, music is a language that has no boundaries, and I play with my full heart
-						and soul behind every note expressed.
-					</p>
-					<p class="signature">Ben Isaacs</p>
+				<div class="col-sm-7">
+					<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen>
 				</div>
 			</div>
 		</div>
@@ -202,7 +159,18 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
+	<!--
+	<script src="js/jquery.video-ui.js"></script>
+	-->
+	<script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$(function() {
+			$('#demo1').videoUI({
+				autoHide: false
+			});
+		}());
+	</script>
 </body>
 </html>

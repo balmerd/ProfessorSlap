@@ -28,9 +28,15 @@ body {
 	height:	7em;
 }
 .marketing .col-lg-4 .img-thumbnail {
-	width: 220px;
-	height: 140px;
+	xxx-width: 220px;
+	xxx-height: 140px;
+	width: 100%;
+	height: auto;
 }
+.thumbnail, .img-thumbnail {
+	box-shadow: 0 1px 3px #555;
+}
+
 /* AUTHOR'S CUSTOM STYLES
 -------------------------------------------------- */
 
@@ -86,20 +92,24 @@ label,
 strong {
 	font-weight: 600;
 }
-#mainCarousel a {
+#mainCarousel a,
+#mainCarouselTest a {
 	outline: 0; /* remove dotted line at right when clicking on next slide button */
 }
-.carousel {
+#mainCarousel .carousel {
 	xxx-margin-top: 30px;
 	xxx-margin-bottom: 30px;
 	margin-top: 50px;
 }
-.carousel,
-.carousel .item,
-.carousel-inner > .item > img {
-	height: 300px;
+#mainCarousel .carousel,
+#mainCarousel .carousel .item,
+#mainCarousel .carousel-inner > .item > img {
+	xxx-height: 300px;
+	height: auto;
+	width: 100%;
 	min-width: 100%;
 }
+
 .carousel-caption {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
 	border-radius: 12px;
@@ -123,11 +133,16 @@ hr.featurette-divider {
 	color: #fff;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	color: #fff;
 	background-color: #428BCA;
 	background-image: none;
 }
 .container .credit {
 	margin-top: 5px;
+}
+.thumbnail-spacer img {
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 @media (max-width: 1200px) {
 	.marketing .row p.min-height {
