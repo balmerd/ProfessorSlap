@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ben Isaacs" />
+	<meta name="keywords" content="Drummer, Instructor, Performer" />
+	<meta name="author" content="dbalmer.net">
+
+	<title>Ben Isaacs</title>
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,600">
+	<!--[if IE]>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:600">
+	<![endif]-->
+
+	<link rel="stylesheet" href="flowplayer/skin/functional.css" />
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="img/ico/favicon.png">
+	
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Ben Isaacs</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="learn.html">Learn</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li class="active" class="dropdown">
+								<a href="media.html" class="dropdown-toggle" data-toggle="dropdown">Media <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="photos.html">Photos</a></li>
+									<li><a href="videos.html">Videos</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="schedule.html" class="dropdown-toggle" data-toggle="dropdown">Schedule <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li class="Performances"></li>
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-header">Separator</li>
+									<li><a href="#">separated link</a></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="navbar-right">
+							<button type="submit" class="btn btn-success" style="margin-top:0.5em;" data-toggle="modal" data-target="#loginModal">Sign in</button>
+						</div>
+					</div>
+					<!--/.navbar-collapse -->
+				</div>
+			</div>
+		</div>
+		<!--/.navbar-->
+		<div class="container" style="padding-top: 80px; padding-bottom: 40px;">
+			<div class="row">
+				<div class="col-sm-5">
+					<a class="lead" href="https://developers.google.com/youtube/youtube_player_demo">YouTube Player</a>
+					<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/ObQhYb-r93s"frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-5">
+					<a class="lead" href="http://flowplayer.org/docs/setup.html#config-options">Flowplayer</a>
+					<div class="flowplayer functional">
+						<video preload="auto">
+							<source type="video/webm" src="http://stream.flowplayer.org/black/470x250.webm">
+							<source type="video/mp4" src="http://stream.flowplayer.org/black/470x250.mp4">
+							<source type="video/ogg" src="http://stream.flowplayer.org/black/470x250.ogv">
+							<source type="video/flash" src="http://stream.flowplayer.org/black/470x250.mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!--/.container-->
+	</div>
+	
+	<div id="footer">
+		<div class="container">
+			<p class="credit">&copy; <span id="copyright-year"></span> Ben Isaacs &middot; <a href="#">Join my mailing list</a></p>
+		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="loginModalLabel">Sign In for Registered Members</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<input type="text" placeholder="Email" class="form-control">
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Password" class="form-control">
+					</div>
+					<p>Not a member? &nbsp;<a href="register.html">Register</a> here.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-success">Sign in</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/lib.js"></script>
+	<script src="flowplayer/flowplayer.min.js"></script>
+
+	<script>
+		$(function () {
+			flowplayer.conf = { // not required unless custom config
+				splash: false,
+				adaptiveRatio: true,
+				swf: 'flowplayer/flowplayer.swf'
+			};
+		});
+	</script>
+</body>
+</html>

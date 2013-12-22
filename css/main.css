@@ -56,7 +56,13 @@ body {
 		background-image: linear-gradient(to bottom, #3C3C3C 0px, #222222 100%);
 		background-repeat: repeat-x;
       }
-
+	.navbar-inverse {
+		background-image: linear-gradient(to bottom, #3C3C3C 0px, #222222 100%);
+		background-repeat: repeat-x;
+	}
+.navbar-inverse .navbar-brand {
+  color: #CCCCCC;
+}
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
         #footer {
@@ -144,6 +150,12 @@ hr.featurette-divider {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
+
+/* override Bootstrap defaults */
+a.thumbnail {
+	outline: 0;
+}
+
 @media (max-width: 1200px) {
 	.marketing .row p.min-height {
 		height:	auto;

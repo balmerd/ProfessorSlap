@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    David Balmer -- Web developer and designer -- http://dbalmer.net
 
 # THANKS
 
-    <name>
+	Open Source Contributors
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Twitter Bootstrap

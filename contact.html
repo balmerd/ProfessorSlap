@@ -15,8 +15,9 @@
 
 	<title>Ben Isaacs</title>
 	
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/social-buttons.css">
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,600">
 	<!--[if IE]>
@@ -33,7 +34,7 @@
 	<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="img/ico/favicon.png">
 	
-	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -61,8 +62,8 @@
 							<li class="dropdown">
 								<a href="media.html" class="dropdown-toggle" data-toggle="dropdown">Media <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="photo.html">Photos</a></li>
-									<li><a href="video.html">Videos</a></li>
+									<li><a href="photos.html">Photos</a></li>
+									<li><a href="videos.html">Videos</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -79,17 +80,9 @@
 								</ul>
 							</li>
 						</ul>
-						<form class="navbar-form navbar-right">
-						<!--
-							<div class="form-group">
-								<input type="text" placeholder="Email" class="form-control">
-							</div>
-							<div class="form-group">
-								<input type="password" placeholder="Password" class="form-control">
-							</div>
-						-->
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Sign in</button>
-						</form>
+						<div class="navbar-right">
+							<button type="submit" class="btn btn-success" style="margin-top:0.5em;" data-toggle="modal" data-target="#loginModal">Sign in</button>
+						</div>
 					</div>
 					<!--/.navbar-collapse -->
 				</div>
@@ -99,12 +92,16 @@
 		<div class="container" style="padding-top:80px; padding-bottom:40px;">
 			<div class="row">
 				<div class="col-sm-3 hidden-xs">
-					<img src="img/yelapa/ProfessorSlap-11.jpg" width="240" class="thumbnail" />
+					<a href="photos.html" class="thumbnail">
+						<img src="img/ben/ben-dec-2013.jpg" />
+					</a>
 				</div>
 				<div class="col-sm-9">
 					<!-- replaces the above column when stacked on small screens -->
 					<div class="pull-left visible-xs" style="margin-right:1em; margin-bottom:0.5em;">
-						<img src="img/ben/ben.jpg" width="240" class="thumbnail" />
+						<a href="photos.html" class="thumbnail">
+							<img src="img/ben/ben-dec-2013.jpg" width="148" />
+						</a>
 					</div>
 					<address>
 						<strong class="lead">Ben Isaacs</strong><br />
@@ -113,7 +110,21 @@
 						Phone: (415) 555-5555<br />
 						<a href="mailto:ben@professorslap.info">ben@professorslap.info</a>
 					</address>
-					<p>Twitter, Facebook or LinkedIn badges here...</p>
+					<p>
+						<button class="btn btn-twitter"><i class="icon-twitter"></i> | Connect with Twitter</button>
+					</p>
+					<p>
+						<button class="btn btn-facebook"><i class="icon-facebook"></i> | Connect with Facebook</button>
+					</p>
+					<p>
+						<button class="btn btn-linkedin"><i class="icon-linkedin"></i> | Connect with LinkedIn</button>
+					</p>
+					<p>
+						<button class="btn btn-youtube"><i class="icon-youtube"></i> | Connect with YouTube</button>
+					</p>
+					<p>
+						<button class="btn btn-google-plus"><i class="icon-google-plus"></i> | Connect with Google Plus</button>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -154,9 +165,8 @@
 	</div>
 	<!-- /.modal -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/lib.js"></script>
 </body>
 </html>

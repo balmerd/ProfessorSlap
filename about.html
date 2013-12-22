@@ -15,8 +15,7 @@
 
 	<title>Ben Isaacs</title>
 	
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,600">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yesteryear">
@@ -41,7 +40,7 @@
 	<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="img/ico/favicon.png">
 	
-	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -69,8 +68,8 @@
 							<li class="dropdown">
 								<a href="media.html" class="dropdown-toggle" data-toggle="dropdown">Media <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="photo.html">Photos</a></li>
-									<li><a href="video.html">Videos</a></li>
+									<li><a href="photos.html">Photos</a></li>
+									<li><a href="videos.html">Videos</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -87,17 +86,9 @@
 								</ul>
 							</li>
 						</ul>
-						<form class="navbar-form navbar-right">
-						<!--
-							<div class="form-group">
-								<input type="text" placeholder="Email" class="form-control">
-							</div>
-							<div class="form-group">
-								<input type="password" placeholder="Password" class="form-control">
-							</div>
-						-->
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Sign in</button>
-						</form>
+						<div class="navbar-right">
+							<button type="submit" class="btn btn-success" style="margin-top:0.5em;" data-toggle="modal" data-target="#loginModal">Sign in</button>
+						</div>
 					</div>
 					<!--/.navbar-collapse -->
 				</div>
@@ -107,7 +98,9 @@
 		<div class="container" style="padding-top:80px; padding-bottom:40px;">
 			<div class="row">
 				<div class="col-sm-3 hidden-xs">
-					<img src="img/ben/ben.jpg" class="thumbnail" />
+					<a href="contact.html" class="thumbnail">
+						<img src="img/ben/ben.jpg" />
+					</a>
 				</div>
 				<div class="col-sm-9">
 					<!-- replaces the above column when stacked on small screens -->
@@ -197,9 +190,8 @@
 	</div>
 	<!-- /.modal -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/lib.js"></script>
 </body>
 </html>

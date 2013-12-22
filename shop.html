@@ -15,24 +15,15 @@
 
 	<title>Ben Isaacs</title>
 	
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400,600">
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yesteryear">
 	<!--[if IE]>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:400">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:600">
 	<![endif]-->
 
 	<link rel="stylesheet" href="css/main.css">
-
-	<style>
-		.signature {
-			font-size: 32px;
-			font-family: 'Yesteryear', cursive;
-		}
-	</style>
 	
 	<!-- Fav and touch icons -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
@@ -41,7 +32,7 @@
 	<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="img/ico/favicon.png">
 	
-	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -69,8 +60,8 @@
 							<li class="dropdown">
 								<a href="media.html" class="dropdown-toggle" data-toggle="dropdown">Media <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="photo.html">Photos</a></li>
-									<li><a href="video.html">Videos</a></li>
+									<li><a href="photos.html">Photos</a></li>
+									<li><a href="videos.html">Videos</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -87,17 +78,9 @@
 								</ul>
 							</li>
 						</ul>
-						<form class="navbar-form navbar-right">
-						<!--
-							<div class="form-group">
-								<input type="text" placeholder="Email" class="form-control">
-							</div>
-							<div class="form-group">
-								<input type="password" placeholder="Password" class="form-control">
-							</div>
-						-->
-						<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Sign in</button>
-						</form>
+						<div class="navbar-right">
+							<button type="submit" class="btn btn-success" style="margin-top:0.5em;" data-toggle="modal" data-target="#loginModal">Sign in</button>
+						</div>
 					</div>
 					<!--/.navbar-collapse -->
 				</div>
@@ -108,14 +91,14 @@
 
 			<h1 class="lead" style="margin:0;">Rhythm Village is proud to present Soul Craft Drums</h1>
 			
+			<!--
 			<a target="irietones_media" href="/sounds/products/2074_1.mp3">
 				<img border="0" src="img/audio.jpg">
 			</a>
+			-->
 
 			<p>
-				We are proud to offer you some of the finest quality hand crafted drums available
-				anywhere! SCD offers a variety of styles of hand crafted djembes and other drums
-				to suit everyone from the young novice to the most discerning professional performer.
+				We are proud to offer you some of the finest quality hand crafted drums available anywhere!
 			</p>
 
 			<div class="pull-left" style="margin-right:1em; margin-bottom:0.5em;">
@@ -171,9 +154,8 @@
 	</div>
 	<!-- /.modal -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/lib.js"></script>
 </body>
 </html>
